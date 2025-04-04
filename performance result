@@ -1,0 +1,133 @@
+{
+	"id": "70057af2-a02f-4f2f-891c-0b017f6dfa9f",
+	"name": "API-Testing",
+	"timestamp": "2025-04-04T10:31:01.764Z",
+	"collection_id": "40039115-b80d4b73-0d27-4da4-b282-324b3f528bdb",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-04-04T10:30:56.253Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "06676e1d-fc53-49b3-beb8-97b57ae87a38",
+			"name": "1) Test login API",
+			"url": "https://api.demoblaze.com/login\n",
+			"time": 2822,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains token": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains token": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2822
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains token": false
+				}
+			]
+		},
+		{
+			"id": "ae8629c1-99b7-4d25-9014-c4657957b24f",
+			"name": "2) Test search API",
+			"url": "https://api.demoblaze.com/entries\n",
+			"time": 1016,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Response should contain products": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should contain products": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1016
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Response should contain products": true
+				}
+			]
+		},
+		{
+			"id": "9d5bc79a-3760-4277-a9b7-1d8e939bcdda",
+			"name": "3) Test checkout APi",
+			"url": "https://api.demoblaze.com/deletecart",
+			"time": 1017,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Response should not contain error": false
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should not contain error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1017
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Response should not contain error": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4855,
+	"collection": {
+		"requests": [
+			{
+				"id": "06676e1d-fc53-49b3-beb8-97b57ae87a38",
+				"method": "POST"
+			},
+			{
+				"id": "ae8629c1-99b7-4d25-9014-c4657957b24f",
+				"method": "GET"
+			},
+			{
+				"id": "9d5bc79a-3760-4277-a9b7-1d8e939bcdda",
+				"method": "POST"
+			}
+		]
+	}
+}
